@@ -49,8 +49,46 @@ let wordList = [
     hint: "a file format for image"
     }
 ]
+let chance=8;
+var randomHint=wordList[Math.floor(Math.random()*wordList.length)].hint;
 
 function start(){
-    var  random=wordList[Math.floor(Math.random()*wordList.length)].word;
-    console.log(random)
+    var  randomWord=wordList[Math.floor(Math.random()*wordList.length)].word;
+    console.log(randomHint)
+    console.log(randomWord)
+    let text;
+    if(chance==0)
+    {
+      chance=8;
+      alert("You Lost");
+      clr();
+      return;
+    }
+    chance--;
+  document.getElementById("guess").innerHTML=chance;
+  document.getElementById("hint").innerHTML=randomHint;
+      let y=document.getElementById("guess").value;
+      // let history=document.getElementById("fn").value;
+      // document.getElementById("his").innerHTML="Enter value is: ${history}";
+    
+  
+//    if(y==x)
+//    {
+//     chance=8;
+//         text = "Guessed";
+//         alert("You won");
+//         clr();
+//         return ;
+//     }
+
+}
+document.getElementById("hint").innerText=randomHint;
+function clr()
+{
+    var randomHint=wordList[Math.floor(Math.random()*wordList.length)].hint;
+  document.getElementById("hint").innerText=randomHint;
+  document.getElementById("guess").innerText="8";
+  
+//   document.getElementById("fn").value="";
+
 }
