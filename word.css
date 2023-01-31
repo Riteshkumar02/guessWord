@@ -1,0 +1,39 @@
+body{
+    padding-top: 20px;
+    text-align: center;
+    background-image: url(https://www.hitbullseye.com/images/school.svg);
+}
+.outer{
+    background-color: white;
+    text-align: center;
+    padding-top: 3px;
+padding-bottom: 20px;
+    width: 400px;
+    margin: auto;
+}
+#alpha{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.letter{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 5%;
+    margin: 2px;
+    height: 30px;
+
+
+}
+#button{
+    color: aliceblue;
+    background-color: rgb(4, 189, 142);
+    width: 300px;
+    height: 40px;
+    border:1px solid rgb(4, 189, 142);
+    border-radius: 4px;
+}
