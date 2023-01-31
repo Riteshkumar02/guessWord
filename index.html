@@ -12,7 +12,7 @@
         <img src="bull.png" height="150px" width="400px">
         <h2>Guess the word</h2>
         <hr>
-        <div id="alpha">
+        <div id="alpha" onclick="start()">
             <input type="text" class="letter">
             <input type="text" class="letter">
             <input type="text" class="letter">
@@ -21,10 +21,14 @@
 
         </div>
         <br>
-        <p id="">Hint:a social media app</p>
-        <p id="guess">Remaining guesses:8</p>
+        <p class="out">Hint:</p>
+        <p class="out" id="hint"></p>
+        <br>
+        <br>
+        <p class="in">Remaining guess:</p>
+        <p class="in" id="guess">8</p>
         <p>Wrong letters</p>
-        <button onclick="start()" id="button">Reset Game</button>
+        <button onclick="clr()" id="button">Reset Game</button>
 
     </div>
     <script src="word.js"></script>
